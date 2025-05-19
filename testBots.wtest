@@ -1,0 +1,16 @@
+import bots.*
+
+describe "tests de benito" {
+  test "benito debe responder al tweet de chano" {
+    const tweetDeChano = chano.tweet() 
+    assert.that(benito.deboResponderAlTweet(tweetDeChano))
+  }
+}
+
+describe "tests de pdpTwitter" {
+  // borrar este test luego de reemplazar la logica del metodo
+  // responderTweetDePersona de BotDePublicidad
+  test "los bots pueden analizar el tweet de chano" {
+    assert.throwsException({pdpTwitter.tweetear(chano)})
+  }
+}
